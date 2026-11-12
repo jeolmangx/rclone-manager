@@ -4,6 +4,23 @@
 
 <h1 align="center">RClone Manager</h1>
 
+## Jeol's private customization
+
+This checkout is for Jeol's personal version of RClone Manager. The application is intended to remain private. Upstream project information, licensing, installation links, and credits remain below.
+
+**Current stage: planning.** The first requested change is a **Copy folder contents** toggle. It will let a transfer either place the selected folder inside the destination or copy its contents directly into that destination. The toggle has not been implemented.
+
+For example, copying `remote:Audiobooks` to `/Media/Audiobooks` would produce:
+
+| Toggle | Behavior | Result |
+| --- | --- | --- |
+| Off | Copy the selected folder into the destination | `/Media/Audiobooks/Audiobooks/...` |
+| On | Copy the selected folder's contents into the destination | `/Media/Audiobooks/...` |
+
+See [the project plan](projectPlan.md) for the proposed UI, code paths, undo handling, and acceptance checks. Additional changes can be recorded there as they are discussed.
+
+---
+
 <p align="center">
   <a href="README.md">🇺🇸 English</a> •
   <a href="README.tr-TR.md">🇹🇷 Türkçe</a> •

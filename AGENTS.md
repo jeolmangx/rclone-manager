@@ -1,5 +1,18 @@
 # AGENTS.md
 
+## Jeol's private project
+
+This checkout is Jeol's private customization of RClone Manager. Jeol has said the application will not be published. Keep upstream license and attribution notices. Upstream contribution and release instructions below are reference material for this checkout; the current work is local customization.
+
+- Follow Jeol's current request and conversational scope. As of October 21, 2026, the work is planning and documentation while Jeol considers additional changes. A plan entry is not authorization to implement it.
+- Read [projectPlan.md](projectPlan.md) for the requested behavior, proposed implementation, and remaining design decisions. Keep planned and implemented behavior clearly distinguished in documentation.
+- The requested feature is a toggle between copying a selected folder into the destination and copying its contents directly into the destination. Do not replace this explicit choice with trailing-slash rules or automatic removal of repeated folder names.
+- Resolve the destination consistently across the UI preview, backend request, saved tasks, and job details. The current undo implementation needs special handling before contents-copy can use it; never implement undo by deleting a pre-existing destination folder.
+- Use camelCase for new TypeScript identifiers and descriptive, action-oriented names. Follow Rust and existing project conventions where they differ. Keep UI wording plain and concrete.
+- Keep changes within the requested scope. The earlier survey of other GUIs is reference material, not a backlog of requested features.
+- Validation follows the changed files: documentation-only edits require a diff/whitespace check and verification of local links and stated behavior. The application build, lint, formatting, and automated-test requirements below apply when changing application code or configuration. Do not report tests or builds as passing unless they were run.
+
+
 This file provides guidance to AI coding agents (e.g. Antigravity, Claude Code, Gemini CLI, Cursor, and similar tools) when working with code in this repository.
 
 RClone Manager welcomes AI-assisted contributions, but the expectation is that you, the human submitter, understand every line you propose and have compiled, linted, and tested it against real code — not just generated it. See [CONTRIBUTING.md](CONTRIBUTING.md) before opening a pull request.
